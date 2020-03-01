@@ -1,4 +1,4 @@
 {
     "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",
-    "cmakeExplorer.buildDir": "./cmake-build-debug"
+    "cmakeExplorer.buildDir": "./build"
 }

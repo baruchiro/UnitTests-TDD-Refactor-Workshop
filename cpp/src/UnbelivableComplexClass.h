@@ -1,0 +1,5 @@
+class UnbelivableComplexClass
+{
+public:
+    UnbelivableComplexClass(){}
+};
