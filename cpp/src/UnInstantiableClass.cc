@@ -11,7 +11,7 @@ void UnInstantiableClass::methodA(int myParam){
         else
             sum=sum+myParam;
     }
-    internalVaribleA = sum;
+    internalVaribleA += sum;
 }
 
 void UnInstantiableClass::methodB(int myParam){

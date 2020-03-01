@@ -1,14 +1,21 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 #include "UnInstantiableClass.h"
+#include "InterestingClass.h"
+#include "ExternalCalls.h"
 
-TEST(SanityTest, UnIntantiableClass) {
+TEST(SanityTest, UnInstantiableClass) {
     UnbelivableComplexClass *myUnbelivable = new UnbelivableComplexClass();
     UnInstantiableClass *myClass = new UnInstantiableClass(*myUnbelivable);
     myClass->methodA(30);
     myClass->methodB(50);
-    EXPECT_EQ(28760,myClass->getAmount());
+    EXPECT_EQ(28764,myClass->getAmount());
 }
+
+TEST(SanityTest, InterestingClass) {
+    InterestingClass *myInteresting = new InterestingClass();
+    myInteresting->longMethod(40);
+   }
 
 class Turtle {
     virtual int PenDown() = 0;

@@ -8,7 +8,7 @@ public:
     UnbelivableComplexClass complexVariable;
 
     UnInstantiableClass(UnbelivableComplexClass complexVariable) : complexVariable(complexVariable)
-    {}
+    {internalVaribleA = complexVariable.getProfit();}
 
     void methodA(int myParam);
     void methodB(int myParam);
