@@ -1,6 +1,6 @@
 # C++ version of Gilded Rose refactoring kata
 
-## Introduction
+## Introduction 
 The C++ version of the Gilded Rose refactoring kata is available in four variants using different test frameworks:
 
 * Catch2 test framework
