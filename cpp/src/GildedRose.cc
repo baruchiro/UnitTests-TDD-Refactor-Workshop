@@ -15,7 +15,7 @@ void GildedRose::runApp()
         printf("Options:\n");
         printf("    Add Items: 1-Brie, 2-Backstage pass, 3-Sulfuras, 4-Beer\n");
         printf("    0-Tick (advance a day), 9-Exit\n");
-        scanf_s ("%d",&option);
+        scanf ("%d",&option);
         switch (option)
         {
         case 1:
