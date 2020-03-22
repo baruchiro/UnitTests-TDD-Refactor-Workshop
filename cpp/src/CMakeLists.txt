@@ -1,11 +1,11 @@
 set(SRC_LIB_NAME src)
 add_library(${SRC_LIB_NAME})
-target_sources(${SRC_LIB_NAME} PRIVATE GildedRose.cc InterestingClass.cc UnInstantiableClass.cc UnbelivableComplexClass.h ExternalCalls.h)
+target_sources(${SRC_LIB_NAME} PRIVATE GildedRose InterestingClass.cpp UnInstantiableClass.cpp UnbelivableComplexClass.h ExternalCalls.h)
 target_include_directories(${SRC_LIB_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 
 set(EXECUTABLE GildedRose)
 add_executable(${EXECUTABLE})
-target_sources(${EXECUTABLE} PUBLIC Main.cc)
+target_sources(${EXECUTABLE} PUBLIC Main.cpp)
 target_link_libraries(${EXECUTABLE} src )
 set_property(TARGET ${EXECUTABLE} PROPERTY CXX_STANDARD 11)

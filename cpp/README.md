@@ -3,12 +3,10 @@
 ## Introduction 
 The C++ version of the Gilded Rose refactoring kata is available in four variants using different test frameworks:
 
-* Catch2 test framework
-  1. Traditional unit test with the [Catch2](https://github.com/catchorg/Catch2) test framework in the `test/cpp_catch2_unittest` folder.
-  2. [Approval tests](https://github.com/approvals/ApprovalTests.cpp) with the [Catch2](https://github.com/catchorg/Catch2) test framework in the `test/cpp_catch2_approvaltest` folder.
+
 * Google Test framework
   1. Traditional unit test with the [Googletest](https://github.com/google/googletest) test framework in the `test/cpp_googletest_unittest` folder.
-  2. [Approval tests](https://github.com/approvals/ApprovalTests.cpp) with the [Googletest](https://github.com/google/googletest) test framework in the `test/cpp_googletest_approvaltest` folder.
+
 
 The `GildedRose.cc` file, i.e. the code under test, is identical in all four variants.
 
@@ -66,3 +64,8 @@ The `GildedRose.cc` file, i.e. the code under test, is identical in all four var
 4. Wait for message `CMake generation finished.` in the CMake output window at the bottom
 5. Select what test variant to run in the drop down menu for Startup Items, e.g. `GildedRoseCatch2ApprovalTests.exe`.
 6. Select menu `Debug - Start`
+
+## How to run coverage
+
+gcov -b ../src/GildedRose.cpp --object-file ./src/CMakeFiles/src.dir/GildedRose.cpp.o
+
