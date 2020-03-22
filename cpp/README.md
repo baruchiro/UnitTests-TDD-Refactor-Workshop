@@ -67,5 +67,8 @@ The `GildedRose.cc` file, i.e. the code under test, is identical in all four var
 
 ## How to run coverage
 
-gcov -b ../src/GildedRose.cpp --object-file ./src/CMakeFiles/src.dir/GildedRose.cpp.o
+from build directory run (you must have gcov and gcovr installed) - 
+gcovr -r ../src --object-directory src/CMakeFiles/src.dir --html-details --output coverage.html
+
+Then open coverage.html in a browser
 
