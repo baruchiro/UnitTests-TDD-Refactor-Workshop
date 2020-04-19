@@ -37,12 +37,18 @@ using testing::AtLeast;
 using testing::Return;// #1
 
 TEST(SanityTest, Mocking) {
-    MockTurtle turtle;                             
+    MockTurtle turtle; 
+    EXPECT_CALL(turtle, Forward(100));   
+    EXPECT_CALL(turtle, Forward(99));                          
     EXPECT_CALL(turtle, GetX())                  
-            .Times(AtLeast(1)).WillOnce(Return(100)).WillOnce(Return(200));
- int yaki = turtle.GetX();
-  EXPECT_EQ(100,yaki);
-  yaki = turtle.GetX();
-    EXPECT_EQ(200,yaki);
+            .Times(AtLeast(1)).WillOnce(Return(100)).WillOnce(Return(200)).WillRepeatedly(Return(300));
+ //int yaki = turtle.GetX();
+    EXPECT_EQ(100,turtle.GetX());
+    EXPECT_EQ(200,turtle.GetX());
+    EXPECT_EQ(300,turtle.GetX());
+    EXPECT_EQ(300,turtle.GetX());
+    
+    turtle.Forward(100);
+    turtle.Forward(99);
 
 }
