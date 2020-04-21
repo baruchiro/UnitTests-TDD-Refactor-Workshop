@@ -1,13 +1,13 @@
 package com.gildedrose;
 
 class UnInstantiableClass {
-    public int internalVaribleA;
-    public int internalVaribleB;
+    public int internalVariableA;
+    public int internalVariableB;
     public UnbelivableComplexClass complexVariable;
 
     UnInstantiableClass(UnbelivableComplexClass complexVariable) {
         complexVariable = complexVariable;
-        internalVaribleA = complexVariable.getProfit();
+        internalVaribaleA = complexVariable.getProfit();
     }
 
     public void methodA(int myParam) {
@@ -21,14 +21,14 @@ class UnInstantiableClass {
             else
                 sum = sum + myParam;
         }
-        internalVaribleA += sum;
+        internalVariableA += sum;
     }
 
     public void methodB(int myParam) {
-        internalVaribleB = myParam * 20;
+        internalVariableB = myParam * 20;
     }
 
     public int getAmount() {
-        return internalVaribleA + internalVaribleB;
+        return internalVariableA + internalVariableB;
     }
 };
