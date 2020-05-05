@@ -7,10 +7,10 @@ class UnInstantiableClass {
 
     UnInstantiableClass(UnbelivableComplexClass complexVariable) {
         complexVariable = complexVariable;
-        internalVaribaleA = complexVariable.getProfit();
+        internalVariableA = complexVariable.getProfit();
     }
 
-    public void methodA(int myParam) {
+    public void methodA(int myParam, int internalVariableA) {
         int i;
         int sum = 0;
         if (myParam < 1)
