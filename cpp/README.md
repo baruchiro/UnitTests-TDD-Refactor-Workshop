@@ -1,19 +1,9 @@
-# C++ version of Gilded Rose refactoring kata
-
-## Introduction 
-The C++ version of the Gilded Rose refactoring kata is available in four variants using different test frameworks:
-
-
-* Google Test framework
-  1. Traditional unit test with the [Googletest](https://github.com/google/googletest) test framework in the `test/cpp_googletest_unittest` folder.
-
-
-The `GildedRose.cc` file, i.e. the code under test, is identical in all four variants.
+# C++ version of Gilded Rose refactoring kata and some other stuff
+# Gilded Rose is based on material found here: https://github.com/emilybache/GildedRose-Refactoring-Kata
 
 ## Prerequisites
-
 * CMake version >= 3.13
-* C++ compiler that support C++11
+* C++ compiler that supports C++11
 
 ## How to build and run tests in a terminal
 
@@ -29,12 +19,7 @@ The `GildedRose.cc` file, i.e. the code under test, is identical in all four var
 
     $ cd ${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/build
     $ ctest -N
-    Test project ${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/build
-      Test #1: GildedRoseCatch2ApprovalTests
-      Test #2: GildedRoseCatch2UnitTests
-      Test #3: GildedRoseGoogletestApprovalTests
-      Test #4: GildedRoseGoogletestUnitTests
-
+   
 ### Run all tests
 
     $ ctest
@@ -43,9 +28,6 @@ The `GildedRose.cc` file, i.e. the code under test, is identical in all four var
 
     $ ctest -VV
 
-### Run a specific test with verbose output
-
-    $ ctest -VV --tests-regex Catch2Approval
 
 ## How to build and run tests using the [CLion IDE](https://www.jetbrains.com/clion/)
 
@@ -66,8 +48,8 @@ The `GildedRose.cc` file, i.e. the code under test, is identical in all four var
 6. Select menu `Debug - Start`
 
 ## How to run coverage
-
-from build directory run (you must have gcov and gcovr installed) - 
+First, make sure you have gcov and gcovr installed
+from build directory run: 
 gcovr -r ../src --object-directory src/CMakeFiles/src.dir --html-details --output coverage.html
 
 Then open coverage.html in a browser
