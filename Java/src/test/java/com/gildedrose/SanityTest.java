@@ -11,10 +11,10 @@ class SanityTest {
     @Test
     void foo() {
         UnbelivableComplexClass myUnbelivable = new UnbelivableComplexClass();
-        UnInstantiableClass myClass = new UnInstantiableClass(myUnbelivable, 3);
+        UnInstantiableClass myClass = new UnInstantiableClass(myUnbelivable);
         myClass.methodA(30);
         myClass.methodB(50);
-        assertEquals(28764, myClass.getAmount());
+        assertEquals(1004, myClass.getAmount());
     }
 
 }
