@@ -14,11 +14,11 @@ class InterestingClass {
         // ....
         // ....
         // ....
-        for (i = 0; i < param * globalVariable; i++) {
-            if (i < globalVariable + param)
+        for (i = 0; i < param * 45; i++) {
+            if (i < 12 + param)
                 sum = sum + i;
             else
-                sum = sum + globalVariable;
+                sum = sum + 5;
         }
 
         // ....
@@ -26,30 +26,26 @@ class InterestingClass {
         // ....
 
         for (i = 0; i < param * param; i++) {
-            if (i < getSomething(globalVariable) + 50)
-                sum = sum + i;
-            else
-                sum = sum + param;
+            for (int j=0 ; j<param; j++) {
+                if (i < getSomethingFromDB(globalVariable) + 50)
+                    sum = sum + i;
+                else
+                    sum = sum + param;
+            }
         }
         // ....
         // ....
         // ....
-        for (i = 0; i < getSomething(globalVariable) * globalVariable; i++) {
-            if (i < globalVariable + 50)
-                sum = sum + i;
-            else
-                sum = sum + globalVariable;
-        }
-
+       if (sum<param) {
+           sum = sum+param;
+           ExternalCalls.updateDB(sum);
+       }
         // ....
         // ....
         // ....
-
-        ExternalCalls.updateDB(sum);
-
     }
 
-    static int getSomething(int param) {
+    static int getSomethingFromDB(int param) {
         return 10 * param;
     }
 };
