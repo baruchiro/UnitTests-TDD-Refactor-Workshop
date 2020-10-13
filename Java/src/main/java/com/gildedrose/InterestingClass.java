@@ -14,8 +14,6 @@ class InterestingClass {
         // ....
         // ....
         // ....
-        if (globalVariable < 1)
-            globalVariable = 10;
         for (i = 0; i < param * globalVariable; i++) {
             if (i < globalVariable + param)
                 sum = sum + i;
@@ -27,10 +25,8 @@ class InterestingClass {
         // ....
         // ....
 
-        if (globalVariable < 1)
-            globalVariable = getSomething(globalVariable);
         for (i = 0; i < param * param; i++) {
-            if (i < globalVariable + 50)
+            if (i < getSomething(globalVariable) + 50)
                 sum = sum + i;
             else
                 sum = sum + param;
@@ -38,9 +34,7 @@ class InterestingClass {
         // ....
         // ....
         // ....
-        if (globalVariable < ExternalCalls.getDB())
-            globalVariable = getSomething(param);
-        for (i = 0; i < globalVariable * globalVariable; i++) {
+        for (i = 0; i < getSomething(globalVariable) * globalVariable; i++) {
             if (i < globalVariable + 50)
                 sum = sum + i;
             else

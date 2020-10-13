@@ -14,7 +14,7 @@ class UnInstantiableClass {
         int i;
         int sum = 0;
         if (myParam < 1)
-            myParam = 10;
+            sum = 10;
         for (i = 0; i < myParam * myParam; i++) {
             if (i < myParam + 50)
                 sum = sum + i;

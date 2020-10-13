@@ -13,6 +13,7 @@ class GildedRoseTest {
         GildedRose app = new GildedRose(items);
         app.updateQuality();
         assertEquals("foo", app.items.get(0).name);
+
     }
 
 }
