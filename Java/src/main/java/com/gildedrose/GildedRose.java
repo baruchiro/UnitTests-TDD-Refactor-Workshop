@@ -26,8 +26,7 @@ class GildedRose {
 
             option = (char)System.in.read();
             System.in.read();
-            System.in.read();
-           
+
         }
         catch (IOException e){
             System.out.println("Error reading from user");
