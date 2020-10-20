@@ -10,7 +10,7 @@ class UnInstantiableClass {
         internalVariableA = complexVariable.getProfit();
     }
 
-    public void methodA(int myParam) {
+    public int methodA(int myParam) {
         int i;
         int sum = 0;
         if (myParam < 1)
@@ -21,6 +21,7 @@ class UnInstantiableClass {
             else
                 sum = sum + myParam;
         }
+        return sum;
     }
 
     public void methodB(int myParam) {
