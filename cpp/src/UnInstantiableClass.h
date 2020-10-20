@@ -5,10 +5,10 @@ class UnInstantiableClass
 public:
     int internalVaribleA;
     int internalVaribleB;
-    UnbelivableComplexClass complexVariable;
+    UnbelivableComplexClass *complexVariable;
 
-    UnInstantiableClass(UnbelivableComplexClass complexVariable) : complexVariable(complexVariable)
-    {internalVaribleA = complexVariable.getProfit();}
+    UnInstantiableClass(UnbelivableComplexClass *complexVariable) : complexVariable(complexVariable)
+    {internalVaribleA = complexVariable->getProfit();}
 
     int methodA(int myParam);
     void methodB(int myParam);

@@ -1,4 +1,10 @@
 #include "InterestingClass.h"
+ 
+ 
+int InterestingClass::methodWithComplexParameters(UnbelivableComplexClass *complexVariable){
+     return 3*complexVariable->getProfit();
+}
+
 
 int InterestingClass::longMethod(int param)
 {

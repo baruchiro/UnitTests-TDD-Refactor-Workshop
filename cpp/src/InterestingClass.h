@@ -1,4 +1,5 @@
 #include "ExternalCalls.h"
+#include "UnbelivableComplexClass.h"
 
 class InterestingClass
 {
@@ -8,5 +9,6 @@ public:
     
 
     int longMethod(int param);
+    int methodWithComplexParameters(UnbelivableComplexClass *complexVariable);
     static int getSomethingFromDB(int param){return 10*param;}
 };
