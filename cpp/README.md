@@ -6,7 +6,7 @@
 * C++ compiler that supports C++11
 
 ## How to build and run tests in a terminal
-
+ 
 ### Build tests
 
     $ cd ${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp
