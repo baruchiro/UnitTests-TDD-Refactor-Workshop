@@ -1,5 +1,12 @@
+#ifndef interesting
+#define interesting
+
 #include "ExternalCalls.h"
 #include "UnbelivableComplexClass.h"
+
+
+
+ int myA();
 
 class InterestingClass
 {
@@ -12,3 +19,5 @@ public:
     int methodWithComplexParameters(UnbelivableComplexClass *complexVariable);
     static int getSomethingFromDB(int param){return 10*param;}
 };
+
+#endif

@@ -1,5 +1,6 @@
 #include "InterestingClass.h"
- 
+
+int myA(){return 4;}
  
 int InterestingClass::methodWithComplexParameters(UnbelivableComplexClass *complexVariable){
      return 3*complexVariable->getProfit();
