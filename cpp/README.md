@@ -15,6 +15,8 @@
     $ cmake ..
     $ cmake --build .
 
+    To run it go to build/src and run GildedRose
+
 ### Show available tests
 
     $ cd ${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/build
