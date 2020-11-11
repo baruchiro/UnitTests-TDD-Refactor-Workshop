@@ -10,3 +10,5 @@ TEST(GildedRoseTest, Foo) {
     EXPECT_EQ("Foo", app.items[0].name);
 }
 
+
+

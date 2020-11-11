@@ -1,13 +1,13 @@
-#include "UnbelivableComplexClass.h"
+#include "UnbelievableComplexClass.h"
 
 class UnInstantiableClass
 {
 public:
     int internalVaribleA;
     int internalVaribleB;
-    UnbelivableComplexClass *complexVariable;
+    UnbelievableComplexClass *complexVariable;
 
-    UnInstantiableClass(UnbelivableComplexClass *complexVariable) : complexVariable(complexVariable)
+    UnInstantiableClass(UnbelievableComplexClass *complexVariable) : complexVariable(complexVariable)
     {internalVaribleA = complexVariable->getProfit();}
 
     int methodA(int myParam);

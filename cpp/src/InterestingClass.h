@@ -2,7 +2,7 @@
 #define interesting
 
 #include "ExternalCalls.h"
-#include "UnbelivableComplexClass.h"
+#include "UnbelievableComplexClass.h"
 
 
 
@@ -16,7 +16,7 @@ public:
     
 
     int longMethod(int param);
-    int methodWithComplexParameters(UnbelivableComplexClass *complexVariable);
+    int methodWithComplexParameters(UnbelievableComplexClass *complexVariable);
     static int getSomethingFromDB(int param){return 10*param;}
 };
 

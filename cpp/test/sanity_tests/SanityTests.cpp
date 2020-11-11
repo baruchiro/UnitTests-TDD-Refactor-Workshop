@@ -9,8 +9,8 @@
 #define myA() 0
 #endif
 TEST(SanityTest, UnInstantiableClass) {
-    UnbelivableComplexClass *myUnbelivable = new UnbelivableComplexClass();
-    UnInstantiableClass *myClass = new UnInstantiableClass(myUnbelivable);
+    UnbelievableComplexClass *myUnbelievable = new UnbelievableComplexClass();
+    UnInstantiableClass *myClass = new UnInstantiableClass(myUnbelievable);
     myClass->methodA(30);
     myClass->methodB(50);
     EXPECT_EQ(1004,myClass->getAmount());
@@ -27,7 +27,7 @@ TEST(SanityTest, InterestingClass) {
 
 TEST(SanityTest, InterestingClassComplexVariable) {
     InterestingClass *myInteresting = new InterestingClass();
-    UnbelivableComplexClass *myUnbelivable =  new UnbelivableComplexClass();
-    EXPECT_EQ(12,myInteresting->methodWithComplexParameters(myUnbelivable));
+    UnbelievableComplexClass *myUnbelievable =  new UnbelievableComplexClass();
+    EXPECT_EQ(12,myInteresting->methodWithComplexParameters(myUnbelievable));
    }
 

@@ -1,13 +1,12 @@
-#include "InterestingClass.h"
+#include "CInterestingFunctions.h"
 
-int myA(){return 4;}
  
-int InterestingClass::methodWithComplexParameters(UnbelievableComplexClass *complexVariable){
-     return 3*complexVariable->getProfit();
+int cMethodWithComplexParameters(CUnbelievableComplexStruct complexVariable){
+     return 3*complexVariable.myValue;
 }
 
 
-int InterestingClass::longMethod(int param)
+int cLongMethod(int param)
 {
     int i;
     int sum = 0;
@@ -28,7 +27,7 @@ int InterestingClass::longMethod(int param)
 
    for (i = 0; i < param * param; i++) {
             for (int j=0 ; j<param; j++) {
-                if (i < getSomethingFromDB(globalVariable) + 50)
+                if (i < cGetSomethingFromDB(cGlobalVariable) + 50)
                     sum = sum + i;
                 else
                     sum = sum + param;
