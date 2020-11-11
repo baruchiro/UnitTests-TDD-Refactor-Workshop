@@ -1,5 +1,6 @@
 #include "CInterestingFunctions.h"
 
+int cGlobalVariable;
  
 int cMethodWithComplexParameters(CUnbelievableComplexStruct complexVariable){
      return 3*complexVariable.myValue;

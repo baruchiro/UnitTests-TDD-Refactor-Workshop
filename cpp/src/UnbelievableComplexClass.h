@@ -1,5 +1,5 @@
-#ifndef unbelievable
-#define unbelievable
+#ifndef __Unbelievable_H
+#define __Unbelievable_H
 
 class UnbelievableComplexClass
 {

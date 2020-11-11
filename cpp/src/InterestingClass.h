@@ -1,5 +1,5 @@
-#ifndef interesting
-#define interesting
+#ifndef __Interesting_H
+#define __Interesting_H
 
 #include "ExternalCalls.h"
 #include "UnbelievableComplexClass.h"

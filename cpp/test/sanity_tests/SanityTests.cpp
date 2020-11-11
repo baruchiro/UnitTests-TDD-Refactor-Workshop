@@ -2,6 +2,7 @@
 #include "UnInstantiableClass.h"
 #include "InterestingClass.h"
 #include "ExternalCalls.h"
+#include "CInterestingFunctions.h"
 
 #define TESTING
 
@@ -26,6 +27,11 @@ TEST(SanityTest, InterestingClass)
 TEST(SanityTest, testMyA)
 {
     EXPECT_EQ(0, myA());
+}
+
+TEST(SanityTest, cLongMethod)
+{
+    EXPECT_EQ(26700, cLongMethod(5));
 }
 
 TEST(SanityTest, InterestingClassComplexVariable)
