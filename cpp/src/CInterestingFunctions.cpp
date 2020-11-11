@@ -15,7 +15,7 @@ int cLongMethod(int param)
     // ....
     // ....
     for (i = 0; i < param * 45; i++) {
-            if (i < 12 + param)
+            if (param < 12)
                 sum = sum + i;
             else
                 sum = sum + 5;

@@ -8,26 +8,29 @@
 #ifdef TESTING
 #define myA() 0
 #endif
-TEST(SanityTest, UnInstantiableClass) {
+TEST(SanityTest, UnInstantiableClass)
+{
     UnbelievableComplexClass *myUnbelievable = new UnbelievableComplexClass();
     UnInstantiableClass *myClass = new UnInstantiableClass(myUnbelievable);
     myClass->methodA(30);
     myClass->methodB(50);
-    EXPECT_EQ(1004,myClass->getAmount());
+    EXPECT_EQ(1004, myClass->getAmount());
 }
 
-TEST(SanityTest, InterestingClass) {
+TEST(SanityTest, InterestingClass)
+{
     InterestingClass *myInteresting = new InterestingClass();
-    EXPECT_EQ(2777066,myInteresting->longMethod(40));
-   }
+    EXPECT_EQ(2777066, myInteresting->longMethod(40));
+}
 
-   TEST(SanityTest, testMyA) {
-    EXPECT_EQ(0,myA());
-   }
+TEST(SanityTest, testMyA)
+{
+    EXPECT_EQ(0, myA());
+}
 
-TEST(SanityTest, InterestingClassComplexVariable) {
+TEST(SanityTest, InterestingClassComplexVariable)
+{
     InterestingClass *myInteresting = new InterestingClass();
-    UnbelievableComplexClass *myUnbelievable =  new UnbelievableComplexClass();
-    EXPECT_EQ(12,myInteresting->methodWithComplexParameters(myUnbelievable));
-   }
-
+    UnbelievableComplexClass *myUnbelievable = new UnbelievableComplexClass();
+    EXPECT_EQ(12, myInteresting->methodWithComplexParameters(myUnbelievable));
+}
