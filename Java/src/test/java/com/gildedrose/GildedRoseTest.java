@@ -1,13 +1,13 @@
 package com.gildedrose;
 import java.util.*;
-import org.junit.jupiter.api.Test;
+import org.junit.*;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.*;
 
-class GildedRoseTest {
+public class GildedRoseTest {
 
     @Test
-    void foo() {
+    public void foo() {
         ArrayList<Item> items = new ArrayList<Item>();
         items.add(new Item("foo", 0, 0) );
         GildedRose app = new GildedRose(items);

@@ -6,7 +6,6 @@ class UnInstantiableClass {
     public UnbelivableComplexClass complexVariable;
 
     UnInstantiableClass(UnbelivableComplexClass complexVariable) {
-        complexVariable = complexVariable;
         internalVariableA = complexVariable.getProfit();
     }
 
