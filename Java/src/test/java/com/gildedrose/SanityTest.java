@@ -5,6 +5,9 @@ import org.junit.*;
 
 import static org.junit.Assert.*;
 
+import com.gildedrose.UnInstantiableClass;
+import com.gildedrose.UnbelivableComplexClass;
+
 public class SanityTest {
 
     @Test

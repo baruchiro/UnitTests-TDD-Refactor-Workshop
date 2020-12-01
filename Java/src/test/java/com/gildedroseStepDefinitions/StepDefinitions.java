@@ -1,8 +1,4 @@
-package com.stepDefinitions;
-import com.gildedrose.*;
-
-
-
+package com.gildedroseStepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,6 +6,8 @@ import io.cucumber.java.en.When;
 import static org.junit.Assert.*;
 
 import java.util.*;
+
+import com.gildedrose.*;
 
 public class StepDefinitions {
 

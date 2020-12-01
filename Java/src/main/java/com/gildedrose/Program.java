@@ -6,7 +6,7 @@ public class Program {
 
     public static void main(String[] args) {
         ArrayList<Item> items = new ArrayList<Item>();
-        GildedRose app = new GildedRose(items);
+        Gildedrose app = new Gildedrose(items);
         app.runApp();
     }
 }

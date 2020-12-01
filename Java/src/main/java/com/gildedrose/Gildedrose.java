@@ -3,10 +3,10 @@ package com.gildedrose;
 import java.util.*;
 import java.io.IOException;
 
-class GildedRose {
+class Gildedrose {
     ArrayList<Item> items = new ArrayList<Item>();
 
-    public GildedRose(ArrayList<Item> items) {
+    public Gildedrose(ArrayList<Item> items) {
         this.items = items;
     }
 
