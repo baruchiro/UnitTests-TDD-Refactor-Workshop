@@ -1,4 +1,4 @@
-package com.gildedrose;
+package com.legacycodeplayground;
 import java.util.*;
 import org.junit.*;
 

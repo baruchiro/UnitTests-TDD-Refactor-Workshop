@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
     plugin = {"pretty"},
     features = "src/test/java/com/gildedrose/gildedroseFeatures",
-    glue = "com.gildedroseStepDefinitions"
+    glue = "com.gildedrose.gildedroseStepDefinitions"
     )
 public class GildedroseFeaturesRunnerTest {
 

@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
     plugin = {"pretty"},
     features = "src/test/java/com/taki/takiFeatures",
-    glue = "com.takiStepDefinitions",
+    glue = "com.taki.takiStepDefinitions",
     tags = "not @ignore"
     )
 public class TakiFeaturesRunnerTest {

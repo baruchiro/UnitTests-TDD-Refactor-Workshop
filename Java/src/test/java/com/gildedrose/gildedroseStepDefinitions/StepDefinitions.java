@@ -1,4 +1,4 @@
-package com.gildedroseStepDefinitions;
+package com.gildedrose.gildedroseStepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

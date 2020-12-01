@@ -1,12 +1,12 @@
 
-package com.gildedrose;
+package com.legacycodeplayground;
 
 import org.junit.*;
 
 import static org.junit.Assert.*;
 
-import com.gildedrose.UnInstantiableClass;
-import com.gildedrose.UnbelivableComplexClass;
+import com.legacycodeplayground.UnInstantiableClass;
+import com.legacycodeplayground.UnbelivableComplexClass;
 
 public class SanityTest {
 
