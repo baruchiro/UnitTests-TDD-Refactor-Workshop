@@ -1,7 +1,7 @@
 package com.filemanager;
 import java.util.*;
 
-public class request {
+public class Request {
     public int type;
     public int subtype;
     public String file;
