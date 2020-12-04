@@ -27,6 +27,14 @@ class UnInstantiableClass {
         internalVariableB = myParam * 20;
     }
 
+    public void methodC(){
+        //Do things
+        complexVariable.doSomehtingComplex();
+        //Do some other things
+        complexVariable.doSomehtingThatInvolvesSomeAPI();
+        //Do some more stuff
+    }
+
     public int getAmount() {
         return internalVariableA + internalVariableB;
     }
