@@ -19,8 +19,8 @@ public class StepDefinitions {
     }
 
     @Then("I have {int} item")
-    public void i_have_item(Integer int1) {
-        assertEquals(1,items.size());
+    public void i_have_item(int int1) {
+        assertEquals(int1,items. size());
     }
 
 }
