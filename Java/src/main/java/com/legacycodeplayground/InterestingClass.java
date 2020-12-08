@@ -7,6 +7,15 @@ class InterestingClass {
         globalVariable = 10;
     }
 
+    public int methodWithComplexParameters(UnbelivableComplexClass complexVariable){
+        if (complexVariable.getProfit()>4)
+            return 5;
+        else
+            return 10;
+    }
+
+
+
     void longMethod(int param) {
         int i;
         int sum = 0;
