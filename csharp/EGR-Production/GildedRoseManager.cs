@@ -6,12 +6,12 @@ namespace GildedRose
 {
     public class GildedRoseManager
     {
-        
+
         static readonly System.String[] Options = new string[20];
         static int _numberOfOptions;
         public void Run()
         {
-           
+
             var ResponseTitle = string.Empty;
 
             _numberOfOptions = 0;
@@ -20,8 +20,8 @@ namespace GildedRose
                              "OUR STOCK:\n";
 
 
-            //read from configuration file
-            reloadConfig:
+        //read from configuration file
+        reloadConfig:
 
             Options[0] = string.Empty;
             int j1;
@@ -99,7 +99,7 @@ namespace GildedRose
                     i1 < j + 1;
                     i1++)
                     Items.Add(new Item
-                    (   GetStringBetweenStrings(currentInventory[i1],
+                    (GetStringBetweenStrings(currentInventory[i1],
                             "addItem:",
                             "/"),
                         Int32.Parse(GetStringBetweenStrings(currentInventory[i1],
@@ -113,7 +113,7 @@ namespace GildedRose
             }
             catch (IOException)
             {
-                
+
             }
 
             // Enter the listening loop.
