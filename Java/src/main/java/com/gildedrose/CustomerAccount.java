@@ -7,7 +7,7 @@ public class CustomerAccount {
       this.serial = serial;
     }
     
-    public void createOrder(/*...*/) {
+    public void createOrder(CustomerOrder order) {
       // ... }
     
     public int getOrderStatus() {
