@@ -1,7 +1,7 @@
 package com.gildedrose;
 
 public class CentralReporter {
-    boolean report(newItem item){
+    boolean report(NewItem item){
         return true;
     }
     

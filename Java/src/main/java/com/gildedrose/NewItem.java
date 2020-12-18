@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-public interface newItem {
+public interface NewItem {
     String getDescription();
     int getCurrentQuality();
     int getExpiredInDays();
