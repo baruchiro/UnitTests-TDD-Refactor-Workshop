@@ -5,6 +5,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Legacycodeplaygroundtests
 
 {
+
+
     [TestClass]
     public class Sanity
     {
@@ -19,5 +21,6 @@ namespace Legacycodeplaygroundtests
             Assert.AreEqual(1004, myClass.getAmount());
         }
     }
+       
 }
 
