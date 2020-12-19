@@ -1,12 +1,12 @@
 namespace Legacycodeplayground
 {
-    class UnInstantiableClass
+    public class UnInstantiableClass
     {
         public int internalVariableA;
         public int internalVariableB;
         public UnbelivableComplexClass complexVariable;
 
-        UnInstantiableClass(UnbelivableComplexClass complexVariable)
+        public UnInstantiableClass(UnbelivableComplexClass complexVariable)
         {
             internalVariableA = complexVariable.getProfit();
         }

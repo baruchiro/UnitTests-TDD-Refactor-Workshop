@@ -1,6 +1,6 @@
 namespace Legacycodeplayground
 {
-    class InterestingClass
+    public class InterestingClass
     {
         int globalVariable;
 

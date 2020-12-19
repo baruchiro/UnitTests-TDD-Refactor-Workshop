@@ -1,6 +1,6 @@
 namespace Legacycodeplayground
 {
-    class UnbelivableComplexClass
+    public class UnbelivableComplexClass
     {
         public UnbelivableComplexClass()
         {

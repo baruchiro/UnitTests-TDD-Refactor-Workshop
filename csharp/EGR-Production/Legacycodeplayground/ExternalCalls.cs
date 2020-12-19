@@ -1,6 +1,6 @@
 namespace Legacycodeplayground
 {
-    class ExternalCalls
+    public class ExternalCalls
     {
 
         public static void updateDB(int param)

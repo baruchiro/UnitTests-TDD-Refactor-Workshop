@@ -49,10 +49,15 @@
     <Compile Include="Gildedrose\Item.cs" />
     <Compile Include="Gildedrose\NewItem.cs" />
     <Compile Include="Gildedrose\Program.cs" />
+    <Compile Include="Legacycodeplayground\ExternalCalls.cs" />
+    <Compile Include="Legacycodeplayground\InterestingClass.cs" />
+    <Compile Include="Legacycodeplayground\UnbelievableComplexClass.cs" />
+    <Compile Include="Legacycodeplayground\UnInstantiableClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
