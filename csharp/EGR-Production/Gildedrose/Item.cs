@@ -3,13 +3,13 @@ namespace Gildedrose {
     public class Item {
         public Item(string Name, int Sellin, int Quality)
         {
-            this.Name = Name;
-            this.SellIn = Sellin;
-            this.Quality = Quality;
+            this.name = Name;
+            this.sellIn = Sellin;
+            this.quality = Quality;
         }
 
-        public string Name { get; set; }
-        public int SellIn { get; set; }
-        public int Quality { get; set; }
+        public string name { get; set; }
+        public int sellIn { get; set; }
+        public int quality { get; set; }
     }
 }
