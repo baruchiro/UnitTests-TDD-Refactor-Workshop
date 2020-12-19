@@ -1,5 +1,5 @@
 ﻿
-namespace GildedRose {
+namespace Gildedrose {
     public class Item {
         public Item(string Name, int Sellin, int Quality)
         {

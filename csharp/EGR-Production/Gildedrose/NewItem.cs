@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EGR_Production
+namespace Gildedrose
 {
     interface NewItem
     {

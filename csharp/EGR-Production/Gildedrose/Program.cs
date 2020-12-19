@@ -1,5 +1,5 @@
 ﻿
-namespace GildedRose
+namespace Gildedrose
 {
     class Program
     {

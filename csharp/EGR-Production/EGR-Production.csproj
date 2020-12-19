@@ -42,13 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CentralReporter.cs" />
-    <Compile Include="CustomerAccount.cs" />
-    <Compile Include="CustomerOrder.cs" />
-    <Compile Include="GildedRoseManager.cs" />
-    <Compile Include="Item.cs" />
-    <Compile Include="NewItem.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Gildedrose\CentralReporter.cs" />
+    <Compile Include="Gildedrose\CustomerAccount.cs" />
+    <Compile Include="Gildedrose\CustomerOrder.cs" />
+    <Compile Include="Gildedrose\GildedRoseManager.cs" />
+    <Compile Include="Gildedrose\Item.cs" />
+    <Compile Include="Gildedrose\NewItem.cs" />
+    <Compile Include="Gildedrose\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

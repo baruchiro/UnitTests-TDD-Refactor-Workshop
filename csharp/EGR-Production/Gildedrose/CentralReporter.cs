@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace EGR_Production
+namespace Gildedrose
 {
     class CentralReporter
     {

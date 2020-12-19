@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EGR_Production
+namespace Gildedrose
 {
-    interface CustomerAccount
+    interface CustomerOrder
     {
-        void createOrder(CustomerOrder order);
-        int getOrderStatus();
+        String getItemType();
+        int getQuantity();
     }
 }

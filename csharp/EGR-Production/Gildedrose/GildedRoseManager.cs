@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace GildedRose
+namespace Gildedrose
 {
     public class GildedRoseManager
     {
