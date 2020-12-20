@@ -21,12 +21,12 @@ namespace GildedRoseTest
         public void sanity()
         {
             GildedRoseManager myGR = new GildedRoseManager();
-            myGR.processOption('1');    
-            myGR.processOption('2');
-            myGR.processOption('3');
-            myGR.processOption('4');
+            myGR.ProcessOption('1');    
+            myGR.ProcessOption('2');
+            myGR.ProcessOption('3');
+            myGR.ProcessOption('4');
             for (int i = 0; i < 10; i++)
-                myGR.processOption('0');
+                myGR.ProcessOption('0');
             Assert.AreEqual(30, myGR.Items[0].Quality, "Brie quality");
             Assert.AreEqual(35, myGR.Items[1].Quality, "Backstage pass quality");
             Assert.AreEqual(20, myGR.Items[2].Quality, "Sulfuras quality");
