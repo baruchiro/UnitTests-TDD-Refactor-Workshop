@@ -21,6 +21,7 @@ namespace GildedRoseTest
         public void sanity()
         {
             GildedRoseManager myGR = new GildedRoseManager();
+            myGR.processOption('1');    
             myGR.processOption('2');
             myGR.processOption('3');
             myGR.processOption('4');
