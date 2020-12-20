@@ -22,7 +22,7 @@ namespace Gildedrose
                 Console.Write("    0-Tick (advance a day), 9-Exit\n");
                 try
                 {
-                    option = getUserInput()[0];
+                    option = Console.ReadLine()[0];
                 }
                 catch (IOException e)
                 {
@@ -137,10 +137,7 @@ namespace Gildedrose
         }
 
 
-        private string getUserInput()
-        {
-            return Console.ReadLine();
-        }
+       
     }
 
 
