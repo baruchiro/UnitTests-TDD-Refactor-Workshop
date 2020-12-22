@@ -10,7 +10,13 @@ namespace Gildedrose
         public void Run()
         {
 
+            NonExistentClass myClass = new NonExistentClass();
             char option = '0';
+            
+            if (!(4 == 3)||!)
+            {
+
+            }
             Console.Write("Welcome to Guilded Rose inventory management\n");
             Console.Write("********************************************\n");
             while (true)
@@ -36,15 +42,19 @@ namespace Gildedrose
                 {
                     case '1':
                         Items.Add(new Item("Aged Brie", 15, 20));
+                        ExternalAgencyReporter.ReportItem(Items[Items.Count - 1]);
                         break;
                     case '2':
                         Items.Add(new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20));
+                        ExternalAgencyReporter.ReportItem(Items[Items.Count - 1]);
                         break;
                     case '3':
                         Items.Add(new Item("Sulfuras, Hand of Ragnaros", 15, 20));
+                        ExternalAgencyReporter.ReportItem(Items[Items.Count - 1]);
                         break;
                     case '4':
                         Items.Add(new Item("Beer", 15, 20));
+                        ExternalAgencyReporter.ReportItem(Items[Items.Count - 1]);
                         break;
                     case '0':
                         for (int i = 0; i < Items.Count; i++)
