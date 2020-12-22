@@ -9,20 +9,11 @@ namespace Gildedrose
         public IList<Item> Items = new List<Item> { };
         public void Run()
         {
-
-            NonExistentClass myClass = new NonExistentClass();
             char option = '0';
-            
-            if (!(4 == 3)||!)
-            {
-
-            }
             Console.Write("Welcome to Guilded Rose inventory management\n");
             Console.Write("********************************************\n");
             while (true)
             {
-
-
                 Console.Write("Options:\n");
                 Console.Write("    Add Items: 1-Brie, 2-Backstage pass, 3-Sulfuras, 4-Beer\n");
                 Console.Write("    0-Tick (advance a day), 9-Exit\n");
