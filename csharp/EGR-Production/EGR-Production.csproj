@@ -43,8 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Gildedrose\BigBrother.cs" />
-    <Compile Include="Gildedrose\CustomerAccount.cs" />
-    <Compile Include="Gildedrose\CustomerOrder.cs" />
     <Compile Include="Gildedrose\ExternalAgencyReporter.cs" />
     <Compile Include="Gildedrose\GildedRoseManager.cs" />
     <Compile Include="Gildedrose\Item.cs" />
