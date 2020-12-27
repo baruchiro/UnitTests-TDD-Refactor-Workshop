@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="legacycodeplaygroundtests\Sanity.cs" />
-    <Compile Include="legacycodeplaygroundtests\UnitTest1.cs" />
+    <Compile Include="legacycodeplaygroundtests\ApprovalTestsExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GildedRoseTests\Sanity.cs" />
   </ItemGroup>
