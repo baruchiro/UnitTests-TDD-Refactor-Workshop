@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 
 
-namespace EGR_Tests.legacycodeplaygroundtests
+namespace Legacycodeplaygroundtests
 {
 
     public class ForApprovalDemonstration

@@ -3,10 +3,7 @@ using Legacycodeplayground;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Legacycodeplaygroundtests
-
 {
-
-
     [TestClass]
     public class Sanity
     {
