@@ -25,6 +25,7 @@ namespace GildedRoseTest
             myGR.ProcessOption('2');
             myGR.ProcessOption('3');
             myGR.ProcessOption('4');
+            Assert.AreEqual(4,ExternalCounter.externalCounter.GetCounter());
             for (int i = 0; i < 10; i++)
                 myGR.ProcessOption('0');
             Assert.AreEqual(30, myGR.Items[0].Quality, "Brie quality");

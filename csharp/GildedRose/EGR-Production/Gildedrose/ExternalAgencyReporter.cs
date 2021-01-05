@@ -1,12 +1,13 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace Gildedrose
 {
-    internal class ExternalAgencyReporter
+    public class ExternalAgencyReporter
     {
-        internal static void ReportItem(Item item)
+        public static void ReportItem(Item item)
         {
-            //some logic
+            ExternalCounter.AddItem();
         }
     }
 }
