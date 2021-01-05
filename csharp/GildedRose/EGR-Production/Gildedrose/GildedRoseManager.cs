@@ -29,101 +29,7 @@ namespace Gildedrose
                 {
                     return;
                 }
-                switch (option)
-                {
-                    case '1':
-                        Items.Add(new Item("Aged Brie", 15, 20));
-                        ExternalAgencyReporter.ReportItem(Items[Items.Count - 1]);
-                        break;
-                    case '2':
-                        Items.Add(new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20));
-                        ExternalAgencyReporter.ReportItem(Items[Items.Count - 1]);
-                        break;
-                    case '3':
-                        Items.Add(new Item("Sulfuras, Hand of Ragnaros", 15, 20));
-                        ExternalAgencyReporter.ReportItem(Items[Items.Count - 1]);
-                        break;
-                    case '4':
-                        Items.Add(new Item("Beer", 15, 20));
-                        ExternalAgencyReporter.ReportItem(Items[Items.Count - 1]);
-                        break;
-                    case '0':
-                        for (int i = 0; i < Items.Count; i++)
-                        {
-                            if (!Items[i].Name.Equals("Aged Brie")
-                                    && !Items[i].Name.Equals("Backstage passes to a TAFKAL80ETC concert"))
-                            {
-                                if (Items[i].Quality > 0)
-                                {
-                                    if (!Items[i].Name.Equals("Sulfuras, Hand of Ragnaros"))
-                                    {
-                                        Items[i].Quality = Items[i].Quality - 1;
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                if (Items[i].Quality < 50)
-                                {
-                                    Items[i].Quality = Items[i].Quality + 1;
-
-                                    if (Items[i].Name.Equals("Backstage passes to a TAFKAL80ETC concert"))
-                                    {
-                                        if (Items[i].SellIn < 11)
-                                        {
-                                            if (Items[i].Quality < 50)
-                                            {
-                                                Items[i].Quality = Items[i].Quality + 1;
-                                            }
-                                        }
-
-                                        if (Items[i].SellIn < 6)
-                                        {
-                                            if (Items[i].Quality < 50)
-                                            {
-                                                Items[i].Quality = Items[i].Quality + 1;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-
-                            if (!Items[i].Name.Equals("Sulfuras, Hand of Ragnaros"))
-                            {
-                                Items[i].SellIn = Items[i].SellIn - 1;
-                            }
-
-                            if (Items[i].SellIn < 0)
-                            {
-                                if (!Items[i].Name.Equals("Aged Brie"))
-                                {
-                                    if (!Items[i].Name.Equals("Backstage passes to a TAFKAL80ETC concert"))
-                                    {
-                                        if (Items[i].Quality > 0)
-                                        {
-                                            if (!Items[i].Name.Equals("Sulfuras, Hand of Ragnaros"))
-                                            {
-                                                Items[i].Quality = Items[i].Quality - 1;
-                                            }
-                                        }
-                                    }
-                                    else
-                                    {
-                                        Items[i].Quality = Items[i].Quality - Items[i].Quality;
-                                    }
-                                }
-                                else
-                                {
-                                    if (Items[i].Quality < 50)
-                                    {
-                                        Items[i].Quality = Items[i].Quality + 1;
-                                    }
-                                }
-                            }
-                        }
-                        break;
-
-                }
+                ProcessOption(option);
 
                 if (Items.Count >= 0)
                 {
@@ -137,8 +43,106 @@ namespace Gildedrose
             }
         }
 
+        public void ProcessOption(char option)
+        {
+            switch (option)
+            {
+                case '1':
+                    Items.Add(new Item("Aged Brie", 15, 20));
+                    ExternalAgencyReporter.ReportItem(Items[Items.Count - 1]);
+                    break;
+                case '2':
+                    Items.Add(new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20));
+                    ExternalAgencyReporter.ReportItem(Items[Items.Count - 1]);
+                    break;
+                case '3':
+                    Items.Add(new Item("Sulfuras, Hand of Ragnaros", 15, 20));
+                    ExternalAgencyReporter.ReportItem(Items[Items.Count - 1]);
+                    break;
+                case '4':
+                    Items.Add(new Item("Beer", 15, 20));
+                    ExternalAgencyReporter.ReportItem(Items[Items.Count - 1]);
+                    break;
+                case '0':
+                    for (int i = 0; i < Items.Count; i++)
+                    {
+                        if (!Items[i].Name.Equals("Aged Brie")
+                                && !Items[i].Name.Equals("Backstage passes to a TAFKAL80ETC concert"))
+                        {
+                            if (Items[i].Quality > 0)
+                            {
+                                if (!Items[i].Name.Equals("Sulfuras, Hand of Ragnaros"))
+                                {
+                                    Items[i].Quality = Items[i].Quality - 1;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            if (Items[i].Quality < 50)
+                            {
+                                Items[i].Quality = Items[i].Quality + 1;
 
-       
+                                if (Items[i].Name.Equals("Backstage passes to a TAFKAL80ETC concert"))
+                                {
+                                    if (Items[i].SellIn < 11)
+                                    {
+                                        if (Items[i].Quality < 50)
+                                        {
+                                            Items[i].Quality = Items[i].Quality + 1;
+                                        }
+                                    }
+
+                                    if (Items[i].SellIn < 6)
+                                    {
+                                        if (Items[i].Quality < 50)
+                                        {
+                                            Items[i].Quality = Items[i].Quality + 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        if (!Items[i].Name.Equals("Sulfuras, Hand of Ragnaros"))
+                        {
+                            Items[i].SellIn = Items[i].SellIn - 1;
+                        }
+
+                        if (Items[i].SellIn < 0)
+                        {
+                            if (!Items[i].Name.Equals("Aged Brie"))
+                            {
+                                if (!Items[i].Name.Equals("Backstage passes to a TAFKAL80ETC concert"))
+                                {
+                                    if (Items[i].Quality > 0)
+                                    {
+                                        if (!Items[i].Name.Equals("Sulfuras, Hand of Ragnaros"))
+                                        {
+                                            Items[i].Quality = Items[i].Quality - 1;
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    Items[i].Quality = Items[i].Quality - Items[i].Quality;
+                                }
+                            }
+                            else
+                            {
+                                if (Items[i].Quality < 50)
+                                {
+                                    Items[i].Quality = Items[i].Quality + 1;
+                                }
+                            }
+                        }
+                    }
+                    break;
+
+            }
+        }
+
+
     }
 
 

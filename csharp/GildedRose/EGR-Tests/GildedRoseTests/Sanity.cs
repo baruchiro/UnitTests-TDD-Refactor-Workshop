@@ -17,15 +17,15 @@ namespace GildedRoseTest
         }
 
 
-        /*[TestMethod]
+        [TestMethod]
         public void sanity()
         {
             GildedRoseManager myGR = new GildedRoseManager();
-            myGR.ProcessOption('1');    
+            myGR.ProcessOption('1');
             myGR.ProcessOption('2');
             myGR.ProcessOption('3');
             myGR.ProcessOption('4');
-            Assert.AreEqual(4,ExternalCounter.GetNumberOfItems());
+            Assert.AreEqual(4, ExternalCounter.GetNumberOfItems());
             for (int i = 0; i < 10; i++)
                 myGR.ProcessOption('0');
             Assert.AreEqual(30, myGR.Items[0].Quality, "Brie quality");
@@ -36,6 +36,6 @@ namespace GildedRoseTest
             Assert.AreEqual(5, myGR.Items[1].SellIn, "Backstage pass SellIn");
             Assert.AreEqual(15, myGR.Items[2].SellIn, "Sulfuras SellIn");
             Assert.AreEqual(5, myGR.Items[3].SellIn, "Beer SellIn");
-        }*/
+        }
     }
 }
